@@ -7,7 +7,82 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <NavigationView  Name="NavigationView"
+                     FocusVisualPrimaryBrush="AliceBlue"
+                     SelectionChanged="NavigationView_SelectionChanged">
+        <NavigationView.MenuItems>
+            <NavigationViewItem Name="A"
+                                Content="编辑课表"
+                                Icon="Home">
+            </NavigationViewItem>
+            <NavigationViewItem Name="B"
+                                Content="想蹭课"
+                                Icon="audio">
+            </NavigationViewItem>
+            <NavigationViewItem Name="C"
+                                Content="找代课"
+                                Icon="Audio">
+            </NavigationViewItem>
+            <NavigationViewItem Name="D"
+                                Content="导出课表"
+                                Icon="Import">
+            </NavigationViewItem>
+            <NavigationViewItem Name="E"
+                                Content="日程安排"
+                                Icon="Allapps">
+            </NavigationViewItem>
+            <NavigationViewItem Name="F"
+                                Content="提醒设置"
+                                Icon="Refresh">
+            </NavigationViewItem>
+        </NavigationView.MenuItems>
+        <NavigationView.AutoSuggestBox>
+            <AutoSuggestBox x:Name="ASB"
+                            QueryIcon="Find" />
+        </NavigationView.AutoSuggestBox>
 
-    </Grid>
+
+
+        <NavigationView.HeaderTemplate>
+            <DataTemplate>
+                <Grid Margin="24,10,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Style="{StaticResource TitleTextBlockStyle}"
+                               FontSize="28"
+                               VerticalAlignment="Center"
+                               Text="Welcome,Team Five" />
+                    <CommandBar Grid.Column="1"
+                                HorizontalAlignment="Right"
+                                VerticalAlignment="Top"
+                                DefaultLabelPosition="Right"
+                                Background="{ThemeResource SystemControlBackgroundAltHighBrush}">
+                        <AppBarButton Label="Refresh"
+                                      Icon="Refresh" />
+                        <AppBarButton Label="Import"
+                                      Icon="Import" />
+                    </CommandBar>
+                </Grid>
+            </DataTemplate>
+        </NavigationView.HeaderTemplate>
+
+        <NavigationView.PaneFooter>
+            <HyperlinkButton x:Name="Contactus"
+                             Content="联系开发者"
+                             Margin="12,0" />
+        </NavigationView.PaneFooter>
+
+        <NavigationView.Content>
+            <Frame Name="Myframe">
+
+            </Frame>
+        </NavigationView.Content>
+
+        <!--<NavigationView.Header>
+            food
+        </NavigationView.Header>-->
+
+    </NavigationView>
 </Page>

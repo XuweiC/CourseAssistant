@@ -95,6 +95,24 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Assets\APage.xaml.cs">
+      <DependentUpon>APage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\BPage.xaml.cs">
+      <DependentUpon>BPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\CPage.xaml.cs">
+      <DependentUpon>CPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\DPage.xaml.cs">
+      <DependentUpon>DPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\EPage.xaml.cs">
+      <DependentUpon>EPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\FPage.xaml.cs">
+      <DependentUpon>FPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -121,6 +139,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Assets\APage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\BPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\CPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\DPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\EPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Assets\FPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
